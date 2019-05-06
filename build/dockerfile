@@ -1,0 +1,4 @@
+FROM tomcat:7-alpine
+#COPY ./mapstore.war /usr/local/tomcat/webapps
+
+CMD ["catalina.sh", "run"]

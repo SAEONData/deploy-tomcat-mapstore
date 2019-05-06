@@ -1,0 +1,13 @@
+version: "2"
+services:
+  tomcat_maptsore:
+    container_name: tomcat_maptsore
+    build: ./build
+    build:
+      context: ./build
+      dockerfile: ./dockerfile
+    volumes:
+     - ./webapps/:/usr/local/tomcat/webapps/
+    ports:
+        - "7071:8081"
+        - "7070:8080"
